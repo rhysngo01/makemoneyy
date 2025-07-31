@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bet365 Premium Landing Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    * { box-sizing: border-box; }
+    body, html {
+      margin: 0; padding: 0; height: 100%;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      background: #061e06;
+      overflow-x: hidden;
+    }
+
+    /* Video Background */
+    .video-bg {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      filter: brightness(0.4);
+    }
+
+    /* Overlay to darken video */
+    .overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(10, 40, 10, 0.75);
+      z-index: 0;
+    }
+
+    /* Container */
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 120px 20px 60px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 4rem;
+      color: #ffd700;
+      margin-bottom: 15px;
+      text-shadow: 0 0 20px #ffd700;
+      animation: fadeInDown 1.2s ease forwards;
+      opacity: 0;
+    }
+
+    p.subtitle {
+      font-size: 1.3rem;
+      max-width: 700px;
+      margin: 0 auto 40px;
+      line-height: 1.6;
+      text-shadow: 0 0 5px black;
+      animation: fadeInUp 1.2s ease forwards;
+      opacity: 0;
+    }
+
+    /* CTA Button */
+    .cta-btn {
+      display: inline-block;
+      background: linear-gradient(90deg, #228b22, #34c634);
+      padding: 20px 70px;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: white;
+      border-radius: 50px;
+      box-shadow: 0 8px 20px rgba(50, 205, 50, 0.6);
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      animation: fadeInUp 1.8s ease forwards;
+      opacity: 0;
+    }
+
+    .cta-btn:hover {
+      background: linear-gradient(90deg, #1a6a1a, #28a828);
+      box-shadow: 0 12px 30px rgba(20, 150, 20, 0.9);
+      transform: scale(1.05);
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+      to { opacity: 1; transform: translateY(0); }
+      from { opacity: 0; transform: translateY(-20px); }
+    }
+
+    @keyframes fadeInUp {
+      to { opacity: 1; transform: translateY(0); }
+      from { opacity: 0; transform: translateY(20px); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Video Background -->
+  <video autoplay muted loop class="video-bg" playsinline>
+    <source src="assets/slot-video.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="overlay"></div>
+
+  <div class="container">
+    <h1>Play Smart with Bet365</h1>
+    <p class="subtitle">
+      Ontario Residents Only • 19+<br/>
+      Your gateway to legal sports betting, casino games, and exclusive promotions.<br/>
+      Fully licensed by iGaming Ontario & AGCO.<br/><br/>
+      Start your journey with a trusted global brand today.
+    </p>
+    <a href="#" class="cta-btn">Join Now</a>
+  </div>
+
+</body>
+</html>
